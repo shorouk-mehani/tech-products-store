@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products Task</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Products</h1>
+
+    <!-- Buttons to switch between the 3 sections -->
+    <div class="tabs">
+        <button class="tab-btn" onclick="showPage('productsPage', this)">Products</button>
+        <button class="tab-btn" onclick="showPage('cartPage', this)">Cart (<span id="cartCount">0</span>)</button>
+        <button class="tab-btn" onclick="showPage('favPage', this)">Favorites (<span id="favCount">0</span>)</button>
+    </div>
+
+    <!-- Products section -->
+    <div id="productsPage" class="page">
+        <div id="productsGrid" class="grid"></div>
+    </div>
+
+    <!-- Cart section -->
+    <div id="cartPage" class="page">
+        <div id="cartGrid" class="grid"></div>
+    </div>
+
+    <!-- Favorites section -->
+    <div id="favPage" class="page">
+        <div id="favGrid" class="grid"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
